@@ -8,8 +8,19 @@
 
 #include "software_i2c.h"
 
-#define SW3626
+#define SW3526
 // #define SW3518s
+
+
+#if defined(SW3526) 
+void SW3526Init();
+void SW3526Update();
+#endif
+
+#if defined(SW3518s)
+void SW3518sInit(void);
+void SW3518sUpdate(void);
+#endif
 
 /* 内部接口 */
 uint8_t SW35xxReadReg(swi2c_t port, uint8_t address, uint8_t reg) {
