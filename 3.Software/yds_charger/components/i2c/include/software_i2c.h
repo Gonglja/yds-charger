@@ -41,7 +41,8 @@ extern "C" {
 
 typedef enum{
     SW_I2C_1 = 0,
-    SW_I2C_2
+    SW_I2C_2,
+    SW_I2C_MAX
 }swi2c_t;
 
 void setsw_i2c(swi2c_t i2cselect);

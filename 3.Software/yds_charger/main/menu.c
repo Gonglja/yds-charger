@@ -11,7 +11,7 @@
 #include "menu.h"
 #include "u8g2_esp32_hal.h"
 #include "adc_read.h"
-#include "sw3526.h"
+#include "sw35xx.h"
 #include "esp_log.h"
 
 #include "esp_netif_ip_addr.h"
@@ -158,6 +158,8 @@ static void oledProtocolShowTask_1(void)
   case 11:
     u8g2_DrawUTF8(&u8g2, 2, 32, "AFC");
     break;
+  default:
+    break;
   }
   switch (sw35xx_c1.pdversion)
   {
@@ -168,6 +170,8 @@ static void oledProtocolShowTask_1(void)
     break;
   case 2:
     u8g2_DrawUTF8(&u8g2, 2, 48, "PD 3.0");
+    break;
+  default:
     break;
   }
   u8g2_DrawLine(&u8g2, 72, 0, 72, 49);
@@ -225,6 +229,8 @@ static void oledProtocolShowTask_2(void)
   case 11:
     u8g2_DrawUTF8(&u8g2, 2, 32, "AFC");
     break;
+  default:
+    break;
   }
   switch (sw35xx_c2.pdversion)
   {
@@ -235,6 +241,8 @@ static void oledProtocolShowTask_2(void)
     break;
   case 2:
     u8g2_DrawUTF8(&u8g2, 2, 48, "PD 3.0");
+    break;
+  default:
     break;
   }
   u8g2_DrawLine(&u8g2, 72, 0, 72, 49);

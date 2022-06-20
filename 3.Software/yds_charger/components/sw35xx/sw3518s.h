@@ -2,15 +2,15 @@
  * @Author: [Gonglja]
  * @Date: 2022-06-18 18:28:00
  * @LastEditors: [Gonglja]
- * @LastEditTime: 2022-06-18 19:54:00
+ * @LastEditTime: 2022-06-20 15:13:00
  * @Description: 
  */
-#ifndef _SW3518S_H_
-#define _SW3518S_H_
+#ifndef SW3518S_H_
+#define SW3518S_H_
 
 
 // 芯片地址
-#define SW3618S_ADDRESS         0x78
+#define SW3518S_ADDRESS         0x78
 
 // 版本信息 : bit[2:0] default:0x07
 #define SW3518S_IC_VERSION      0x01
@@ -43,15 +43,15 @@
 
 // ADC VIN使能
 #define SW3518S_ADC_VIN_ENABLE  0x13
-// ADC VIN数据 高8位，系数160mV/bit
+// ADC VIN数据 高8位
 #define SW3518S_ADC_VIN_DATA    0x30
-// ADC VOUT数据 高8位，系数96mV/bit
+// ADC VOUT数据 高8位
 #define SW3518S_ADC_VOUT_DATA   0x31
-// ADC IOUT C口数据 高8位，系数40mA/bit
+// ADC IOUT C口数据 高8位
 #define SW3518S_ADC_IOUT_C_DATA 0x33
-// ADC IOUT A口数据 高8位，系数40mA/bit
+// ADC IOUT A口数据 高8位
 #define SW3518S_ADC_IOUT_A_DATA 0x34
-// ADC NTC电压数据 高8位，系数8mV/bit
+// ADC NTC电压数据 高8位
 #define SW3518S_ADC_VNTC_DATA   0x37
 // ADC 配置
 #define SW3518S_ADC_CONFIG      0x3A

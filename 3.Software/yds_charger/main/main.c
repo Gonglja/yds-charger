@@ -24,7 +24,7 @@
 #include "adc_read.h"
 #include "lis3dh.h"
 #include "led_strip.h"
-#include "sw3526.h"
+#include "sw35xx.h"
 #include "led_strip.h"
 #include "driver/rmt.h"
 #include <driver/gpio.h>

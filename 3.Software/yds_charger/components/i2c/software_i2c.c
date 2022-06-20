@@ -64,6 +64,8 @@ void setsw_i2c(swi2c_t i2cselect){
             g_i2c_scl = i2c2_scl;
             g_i2c_sda = i2c2_sda;
             break;
+        default:
+            break;
     }
 }
 

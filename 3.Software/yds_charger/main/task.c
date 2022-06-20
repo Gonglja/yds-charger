@@ -19,7 +19,7 @@
 #include "adc_read.h"
 #include "lis3dh.h"
 //#include "led_strip.h"
-#include "sw3526.h"
+#include "sw35xx.h"
 
 static const char *TAG = "task";
 
@@ -37,7 +37,7 @@ void sw35xxTask(void *pvParameters)
 {
   for (;;)
   {
-    SW35XXUpdate();
+    SW35xxUpdate();
     vTaskDelay(pdMS_TO_TICKS(200));
   }
 }
